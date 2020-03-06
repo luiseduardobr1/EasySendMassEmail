@@ -57,3 +57,23 @@ After that, all destinations will be in *emails* list. I prefer to use this way 
 # Other Way - TO-list
 emails=['bla1234@emailbla.com.br', 'blabla@email.com.br']
 ```
+
+# Body Email
+As you can see, the body text is very simple just text and a attachment in PDF:
+```Python
+# Body EMAIL
+contents = [
+    """Hello, 
+Here is my resume.
+Sincerely,
+Luís Eduardo Pompeu.
+""", 'curriculo_luiseduardopompeu.pdf'
+]
+```
+
+# Send Email
+To send a email just type:
+```Python
+yag.send(endereco, 'Vaga Projetista - Eng. Elétrica', contents)
+```
+where *endereco* is the destination email, *'Vaga Projetista - Eng. Elétrica'* is the subject and *contents* the body text and attachments. 
